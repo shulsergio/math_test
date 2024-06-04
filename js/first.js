@@ -3,6 +3,19 @@ const MATH_OPERATION = ["*", "+", "-"];
 
 const list = document.querySelector(".js-list");
 
+function createMarkupHtml(ARR_NUM) {
+  const numbersArray = AddMath(ARR_NUM, 1);
+  return numbersArray
+    .map(
+      ({ first_num, second_num }) =>
+        `<li class="number">
+      ${first_num} + ${second_num} =</li>
+        <input type="text" class="input-result js-result">
+`
+    )
+    .join("");
+}
+
 function AddMath(numbers, MATH_OPERATION) {
   const newARR = [];
   for (let i = 0; i < 10; i++) {
@@ -20,5 +33,5 @@ function AddMath(numbers, MATH_OPERATION) {
   return newARR;
 }
 
-// list.insertAdjacentHTML("afterbegin", createMarkup(ARR_NUM));
+list.insertAdjacentHTML("afterbegin", createMarkupHtml(ARR_NUM));
 // const numbersArray = AddMath(ARR_NUM, 1);
