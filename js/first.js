@@ -1,13 +1,24 @@
-const ARR_NUM = [1, 100]; //минимальное и максиммальное число
+const ARR_NUM = [10, 50]; //минимальное и максиммальное число
 const MATH_OPERATION = ["*", "+", "-"];
-const newARR = [];
-function AddMath(ARR_NUM, MATH_OPERATION) {
-  for (let i = 0; i < 250; i++) {
-    newARR.push(
-      Math.floor(Math.random() * (ARR_NUM[1] - ARR_NUM[0]) + ARR_NUM[0])
-    );
+
+const list = document.querySelector(".js-list");
+
+function AddMath(numbers, MATH_OPERATION) {
+  const newARR = [];
+  for (let i = 0; i < 10; i++) {
+    newARR.push({
+      first_num: Math.floor(
+        Math.random() * (numbers[1] - numbers[0]) + numbers[0]
+      ),
+      second_num: Math.floor(
+        Math.random() * (numbers[1] - numbers[0]) + numbers[0]
+      ),
+    });
   }
-  const sortedArr = newARR.toSorted((a, b) => a - b);
-  console.log(sortedArr);
+  console.log("newARR:");
+  console.log(newARR);
+  return newARR;
 }
-AddMath(ARR_NUM, 1);
+
+// list.insertAdjacentHTML("afterbegin", createMarkup(ARR_NUM));
+// const numbersArray = AddMath(ARR_NUM, 1);
