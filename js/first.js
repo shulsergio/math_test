@@ -1,23 +1,13 @@
-console.log("--- .article");
-const article = document.querySelector(".article");
-console.log(article.innerHTML);
-
-console.log("--- .article .title");
-const title = document.querySelector(".article .title");
-console.log(title.innerHTML);
-
-console.log("--- .article .text");
-const text = document.querySelector(".article .text");
-console.log(text.innerHTML);
-
-console.log("--- .text2");
-const text2 = document.querySelector(".text");
-console.log(text.innerHTML);
-
-console.log("--- .article .link");
-const link = document.querySelector(".article .link");
-console.log(link.innerHTML);
-
-console.log("--- .text2");
-const link2 = document.querySelector(".link");
-console.log(link.innerHTML);
+const ARR_NUM = [1, 100]; //минимальное и максиммальное число
+const MATH_OPERATION = ["*", "+", "-"];
+const newARR = [];
+function AddMath(ARR_NUM, MATH_OPERATION) {
+  for (let i = 0; i < 250; i++) {
+    newARR.push(
+      Math.floor(Math.random() * (ARR_NUM[1] - ARR_NUM[0]) + ARR_NUM[0])
+    );
+  }
+  const sortedArr = newARR.toSorted((a, b) => a - b);
+  console.log(sortedArr);
+}
+AddMath(ARR_NUM, 1);
