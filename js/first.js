@@ -1,4 +1,4 @@
-const ARR_NUM_PLUS = [1, 11]; //минимальное и максиммальное число
+const ARR_NUM_PLUS = [1, 21]; //минимальное и максиммальное число
 const MATH_OPERATION = ["*", "+", "-"];
 
 const list = document.querySelector(".js-list");
@@ -19,7 +19,7 @@ function createMarkupHtml(ARR_NUM_PLUS) {
 
 function AddMath(numbers, MATH_OPERATION) {
   const newARR = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 5; i++) {
     newARR.push({
       first_num: Math.floor(
         Math.random() * (numbers[1] - numbers[0]) + numbers[0]
@@ -35,4 +35,7 @@ function AddMath(numbers, MATH_OPERATION) {
 }
 
 list.insertAdjacentHTML("afterbegin", createMarkupHtml(ARR_NUM_PLUS));
+const btnOkClick = document.querySelector(".js-btn");
+btnOkClick.addEventListener("click", hendlerClickOk);
+function hendlerClickOk() {}
 // const numbersArray = AddMath(ARR_NUM_PLUS, 1);
