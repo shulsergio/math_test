@@ -1,18 +1,19 @@
-const ARR_NUM = [10, 50]; //минимальное и максиммальное число
+const ARR_NUM_PLUS = [1, 11]; //минимальное и максиммальное число
 const MATH_OPERATION = ["*", "+", "-"];
 
 const list = document.querySelector(".js-list");
 
-function createMarkupHtml(ARR_NUM) {
-  const numbersArray = AddMath(ARR_NUM, 1);
+function createMarkupHtml(ARR_NUM_PLUS) {
+  let i = 1;
+  const numbersArray = AddMath(ARR_NUM_PLUS, 1);
   return numbersArray
-    .map(
-      ({ first_num, second_num }) =>
-        `<li class="number">
+    .map(({ first_num, second_num }) => {
+      i += 1;
+      return `<li class="number">
       ${first_num} + ${second_num} =</li>
-        <input type="text" class="input-result js-result">
-`
-    )
+        <input type="text" class="input-result${i} js-result">
+`;
+    })
     .join("");
 }
 
@@ -33,5 +34,5 @@ function AddMath(numbers, MATH_OPERATION) {
   return newARR;
 }
 
-list.insertAdjacentHTML("afterbegin", createMarkupHtml(ARR_NUM));
-// const numbersArray = AddMath(ARR_NUM, 1);
+list.insertAdjacentHTML("afterbegin", createMarkupHtml(ARR_NUM_PLUS));
+// const numbersArray = AddMath(ARR_NUM_PLUS, 1);
