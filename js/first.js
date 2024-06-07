@@ -1,6 +1,6 @@
 const ARR_NUM_PLUS = [1, 21]; //минимальное и максиммальное число
 const MATH_OPERATION = ["*", "+", "-"];
-
+const newARR = [];
 const list = document.querySelector(".js-list");
 const newForm = document.querySelector(".js-my-form");
 
@@ -35,7 +35,6 @@ function createFormMarkupHtml(ARR_NUM_PLUS) {
 }
 
 function AddMath(numbers, MATH_OPERATION) {
-  const newARR = [];
   let numA = 0,
     numB = 0;
   for (let i = 0; i < 5; i++) {
@@ -51,6 +50,19 @@ function AddMath(numbers, MATH_OPERATION) {
   console.log(newARR);
   return newARR;
 }
+function checkResults(data) {
+  let i = 0;
+  console.log("checkResults");
+  console.log(data);
+  console.log(newARR);
+  //   for (let key in data) {
+  //     console.log("data[key] - " + newARR.result_plus[key]);
+  //     console.log("data[key].value- " + newARR.result_plus[key].value);
+  //     console.log("newARR[i].result_plus - " + newARR[i].result_plus);
+  //      if (data[key] === newARR[i].result_plus) {}
+  //     i++;
+  //   }
+}
 
 function hendlerClickOk() {
   const form = document.querySelector(".js-my-form");
@@ -62,6 +74,7 @@ function hendlerClickOk() {
 
   console.log(data);
   btnOkClick.style.visibility = "disabled";
+  checkResults(data);
 }
 
 list.insertAdjacentHTML("afterbegin", createInputMarkupHtml(ARR_NUM_PLUS));
