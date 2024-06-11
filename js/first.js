@@ -4,19 +4,19 @@ const newARR = [];
 const list = document.querySelector(".js-list");
 const newForm = document.querySelector(".js-my-form");
 
-function createInputMarkupHtml(ARR_NUM_PLUS) {
-  let i = 1;
-  const numbersArray = AddMath(ARR_NUM_PLUS, 1);
-  return numbersArray
-    .map(({ first_num, second_num }) => {
-      i += 1;
-      return `<li class="number">
-      ${first_num} + ${second_num} =</li>
-        <input type="text" class="input-result${i} js-result">
-`;
-    })
-    .join("");
-}
+// function createInputMarkupHtml(ARR_NUM_PLUS) {
+//   let i = 1;
+//   const numbersArray = AddMath(ARR_NUM_PLUS, 1);
+//   return numbersArray
+//     .map(({ first_num, second_num }) => {
+//       i += 1;
+//       return `<li class="number">
+//       ${first_num} + ${second_num} =</li>
+//         <input type="text" class="input-result${i} js-result">
+// `;
+//     })
+//     .join("");
+// }
 
 function createFormMarkupHtml(ARR_NUM_PLUS) {
   let i = 0;
@@ -26,7 +26,7 @@ function createFormMarkupHtml(ARR_NUM_PLUS) {
       i += 1;
       return `
       <div class="form-group">
-        <label for="field${i}">${first_num} + ${second_num}</label>
+        <label class="field${i}">${first_num} + ${second_num}</label>
         <input type="text" id="form-result${i}" name="form-result${i}" placeholder="Ответ" />
       </div>
 `;
@@ -50,34 +50,46 @@ function AddMath(numbers, MATH_OPERATION) {
   console.log(newARR);
   return newARR;
 }
-function checkResults(data) {
-  let i = 0;
+function checkResults(arrData) {
   console.log("checkResults");
-  console.log(data);
+  console.log(arrData);
   console.log(newARR);
-  //   for (let key in data) {
-  //     console.log("data[key] - " + newARR.result_plus[key]);
-  //     console.log("data[key].value- " + newARR.result_plus[key].value);
-  //     console.log("newARR[i].result_plus - " + newARR[i].result_plus);
-  //      if (data[key] === newARR[i].result_plus) {}
-  //     i++;
-  //   }
+
+  let i = 0;
+  newARR.forEach((key) => {
+    console.log("key.result_plus ", key.result_plus);
+    console.log("typOf key.result_plus ", typeof key.result_plus);
+    console.log("arrData[i] ", arrData[i]);
+    console.log("typOf arrData[i] ", typeof arrData[i]);
+    if (key.result_plus === arrData[i]) {
+      console.log(
+        "key.result_plus === arrData[i]",
+        key.result_plus === arrData[i]
+      );
+      document.querySelector(`.field${i + 1}`).style.color = "red";
+    }
+    i++;
+  });
 }
 
 function hendlerClickOk() {
   const form = document.querySelector(".js-my-form");
   const formData = new FormData(form);
   const data = {};
+  const arrData = [];
   formData.forEach((value, key) => {
-    data[key] = value;
+    data[key] = value; // OBJ
+    arrData.push(Number(data[key])); // Massiv
   });
-
+  console.log("дата после получения ответа");
+  console.log(formData);
   console.log(data);
-  btnOkClick.style.visibility = "disabled";
-  checkResults(data);
+  console.log(arrData);
+  //   btnOkClick.style.visibility = "disabled";
+  checkResults(arrData);
 }
 
-list.insertAdjacentHTML("afterbegin", createInputMarkupHtml(ARR_NUM_PLUS));
+// list.insertAdjacentHTML("afterbegin", createInputMarkupHtml(ARR_NUM_PLUS)); function createInputMarkupHtml
 newForm.insertAdjacentHTML("afterbegin", createFormMarkupHtml(ARR_NUM_PLUS));
 const btnOkClick = document.querySelector(".js-form-btn");
 btnOkClick.addEventListener("click", hendlerClickOk);
