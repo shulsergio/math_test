@@ -3,20 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Спочатку нормалізатор -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ---- -->
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <article class="article">
-      <h2 class="title">title</h2>
-      <p class="text">NEW</p>
-    </article>
-    <ul class="js-list"></ul>
-    <button type="button" class="btn-ok js-btn">OK</button>
-    <form class="js-my-form">
-      <button type="button" class="js-form-btn">Отправить</button>
-    </form>
-
-    <script type="module" src="./js/first.js"></script>
+    <header class="header"></header>
+    <main>
+      <div class="container">
+        <ul class="main-list">
+          <li class="index-html">
+            <a href="./math_add.html" class="clickable">
+              <svg width="24" height="24" class="media-svg">
+                <use href="./img/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="index-html">
+            <a href="./math_add.html" class="clickable">
+              <svg width="24" height="24" class="media-svg">
+                <use href="./img/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="index-html">
+            <a href="./math_add.html" class="clickable">
+              <svg width="24" height="24" class="media-svg">
+                <use href="./img/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>

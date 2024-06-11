@@ -26,7 +26,7 @@ function createFormMarkupHtml(ARR_NUM_PLUS) {
       i += 1;
       return `
       <div class="form-group">
-        <label class="field${i}">${first_num} + ${second_num}</label>
+        <label class="field${i}">${first_num} + ${second_num}= </label>
         <input type="text" id="form-result${i}" name="form-result${i}" placeholder="Ответ" />
       </div>
 `;
