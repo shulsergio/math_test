@@ -4,20 +4,6 @@ const newARR = [];
 const list = document.querySelector(".js-list");
 const newForm = document.querySelector(".js-my-form");
 
-// function createInputMarkupHtml(ARR_NUM_PLUS) {
-//   let i = 1;
-//   const numbersArray = AddMath(ARR_NUM_PLUS, 1);
-//   return numbersArray
-//     .map(({ first_num, second_num }) => {
-//       i += 1;
-//       return `<li class="number">
-//       ${first_num} + ${second_num} =</li>
-//         <input type="text" class="input-result${i} js-result">
-// `;
-//     })
-//     .join("");
-// }
-
 function createFormMarkupHtml(ARR_NUM_PLUS) {
   let i = 0;
   const numArray = AddMath(ARR_NUM_PLUS, 1);
@@ -26,8 +12,8 @@ function createFormMarkupHtml(ARR_NUM_PLUS) {
       i += 1;
       return `
       <div class="form-group">
-        <label class="field${i}">${first_num} + ${second_num}= </label>
-        <input type="text" id="form-result${i}" name="form-result${i}" placeholder="Ответ" />
+        <label class="field field${i}">${first_num} + ${second_num}= </label>
+        <input type="text" class="form-result" id="form-result${i}" name="form-result${i}" placeholder="Ответ" />
       </div>
 `;
     })
