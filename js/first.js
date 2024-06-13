@@ -11,9 +11,9 @@ function createFormMarkupHtml(ARR_NUM_PLUS) {
     .map(({ first_num, second_num }) => {
       i += 1;
       return `
-      <div class="form-group">
+      <div class="form-group"> <span class="circle circle${i}"></span>
         <label class="field field${i}">${first_num} + ${second_num}= </label>
-        <input type="text" class="form-result" id="form-result${i}" name="form-result${i}" placeholder="Ответ" />
+        <input type="text" class="form-result" id="form-result${i}" name="form-result${i}" placeholder="Ответ" required autocomplete="off"/>
       </div>
 `;
     })
@@ -42,18 +42,17 @@ function checkResults(arrData) {
   console.log(newARR);
 
   let i = 0;
+
   newARR.forEach((key) => {
     console.log("key.result_plus ", key.result_plus);
     console.log("typOf key.result_plus ", typeof key.result_plus);
     console.log("arrData[i] ", arrData[i]);
     console.log("typOf arrData[i] ", typeof arrData[i]);
-    if (key.result_plus === arrData[i]) {
-      console.log(
-        "key.result_plus === arrData[i]",
-        key.result_plus === arrData[i]
-      );
-      document.querySelector(`.field${i + 1}`).style.color = "red";
+    const circleStyle = document.querySelector(`.circle${i + 1}`);
+    if (key.result_plus !== arrData[i]) {
+      circleStyle.style.backgroundColor = "red";
     }
+    circleStyle.style.visibility = "visible";
     i++;
   });
 }

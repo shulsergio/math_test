@@ -89,10 +89,13 @@ border: none;
     padding: 10px;
 margin: 16px;
     width: 200px;
-    border: 1px solid #212d95;
-    border-radius: 4px;
+    border-radius: 8px;
 display: flex;
 flex-direction: column;
+    background-color: #ffffff;
+        border: 1px solid #111d88;
+        /* border: 1px solid #b0bec5; */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 
 }
 .form-group{
@@ -100,15 +103,61 @@ flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 12px;
+
 }
+.circle{
+    margin-left: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+visibility:hidden;
+    background-color: green;
+}
+
 .field{
-padding-right: 10px;
-width: 80px;
+    margin-left: 15px;
+/* padding-right: 15px; */
+width: 60px;
+    color: #06109d;
+        /* Темно-синий цвет для текста метки */
+
+}
+
+.form-result{
+    padding-left: 6px;
+    width: 50px;
+    font-size: 12px;
+        border: 1px solid #b0bec5;
+            border-radius: 4px;
+            background-color: #e1f5fe;
+ color: #0277bd;
+
+}
+
+.form-result:focus {
+    border-color: #0288d1;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.js-form-btn{
+    margin: 0 auto;
+    width: 50%;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0087d0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    transition: box-shadow 0.2s;
 
 
 }
-.form-result{
-    padding-left: 10px;
-    width: 50px;
-    font-size: 14px;
+.js-form-btn:hover {
+    background-color: #111d88;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
