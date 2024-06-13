@@ -1,4 +1,4 @@
-const ARR_NUM_PLUS = [1, 21]; //минимальное и максиммальное число
+const ARR_NUM_PLUS = [1, 11]; //минимальное и максиммальное число
 const MATH_OPERATION = ["*", "+", "-"];
 const newARR = [];
 const list = document.querySelector(".js-list");
@@ -55,6 +55,7 @@ function checkResults(arrData) {
     circleStyle.style.visibility = "visible";
     i++;
   });
+  document.querySelector(".js-form-btn").disabled = true;
 }
 
 function hendlerClickOk() {
@@ -70,13 +71,9 @@ function hendlerClickOk() {
   console.log(formData);
   console.log(data);
   console.log(arrData);
-  //   btnOkClick.style.visibility = "disabled";
   checkResults(arrData);
 }
 
-// list.insertAdjacentHTML("afterbegin", createInputMarkupHtml(ARR_NUM_PLUS)); function createInputMarkupHtml
 newForm.insertAdjacentHTML("afterbegin", createFormMarkupHtml(ARR_NUM_PLUS));
 const btnOkClick = document.querySelector(".js-form-btn");
 btnOkClick.addEventListener("click", hendlerClickOk);
-
-// const numbersArray = AddMath(ARR_NUM_PLUS, 1);
