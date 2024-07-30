@@ -1,4 +1,4 @@
-const ARR_NUM_PLUS = [1, 11]; //минимальное и максиммальное число
+const ARR_NUM_PLUS = [0, 50]; //минимальное и максиммальное число
 const MATH_OPERATION = ["*", "+", "-"];
 const newARR = [];
 const list = document.querySelector(".js-list");
@@ -23,7 +23,7 @@ function createFormMarkupHtml(ARR_NUM_PLUS) {
 function AddMath(numbers, MATH_OPERATION) {
   let numA = 0,
     numB = 0;
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 10; i++) {
     numA = Math.floor(Math.random() * (numbers[1] - numbers[0]) + numbers[0]);
     numB = Math.floor(Math.random() * (numbers[1] - numbers[0]) + numbers[0]);
     newARR.push({
