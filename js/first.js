@@ -1,4 +1,4 @@
-const ARR_NUM_PLUS = [0, 50]; //минимальное и максиммальное число
+const ARR_NUM_PLUS = [0, 30]; //минимальное и максиммальное число
 const MATH_OPERATION = ["*", "+", "-"];
 const newARR = [];
 const list = document.querySelector(".js-list");

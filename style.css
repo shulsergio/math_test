@@ -101,11 +101,27 @@ font-weight: 500;
 }
 
 /* ----- math - add --- */
+.math-add-container{
+    width: 100%;
+
+}
+.btn-back{
+    align-content: left;
+}
+.text-block{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-two{
+    margin-top: 12px;
+
+}
 
 .form{
     padding: 10px;
 margin: 16px;
-    width: 200px;
+    width: 260px;
     border-radius: 8px;
 display: flex;
 flex-direction: column;
@@ -124,8 +140,8 @@ flex-direction: column;
 }
 .circle{
     margin-left: 10px;
-    width: 12px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     border: none;
 visibility:hidden;
@@ -133,8 +149,9 @@ visibility:hidden;
 }
 
 .field{
+    font-size: 20px;
 margin-left: 15px;
-width: 60px;
+width: 90px;
 color: #06109d;
 
 }
@@ -142,22 +159,24 @@ color: #06109d;
 .form-result{
 padding-left: 6px;
     width: 50px;
-    font-size: 12px;
+    font-size: 20px;
     border: 1px solid #b0bec5;
     border-radius: 4px;
     background-color: #e1f5fe;
     color: #0277bd;
 }
-
+.form-result::placeholder{
+        font-size: 12px;
+}
 .form-result:focus {
     border-color: #0288d1;
     background-color: #ffffff;
     outline: none;
 }
 
-.js-form-btn{
+.button-all{
     margin: 0 auto;
-    width: 50%;
+    width: 100px;
     padding: 4px;
     border: none;
     border-radius: 4px;
@@ -171,7 +190,7 @@ padding-left: 6px;
 
 
 }
-.js-form-btn:hover {
+.button-all:hover {
     background-color: #111d88;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
