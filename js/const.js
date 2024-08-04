@@ -55,7 +55,7 @@ const newARR = [];
 export function AddMath(numbers, MATH_OPERATION) {
   let numA = 0,
     numB = 0;
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 12; i++) {
     numA = Math.floor(Math.random() * (numbers[1] - numbers[0]) + numbers[0]);
     numB = Math.floor(Math.random() * (numbers[1] - numbers[0]) + numbers[0]);
     newARR.push({
