@@ -1,3 +1,5 @@
+import { createModalContent } from "./marckup.js";
+
 export const MAIN_CARD_LIST = [
   {
     icon: "./img/symbol-defs.svg#icon-user-plus",
@@ -11,8 +13,8 @@ export const MAIN_CARD_LIST = [
     icon: "./img/symbol-defs.svg#icon-user-minus",
     itemName: "Minus",
     itemText: "Вычитание чисел",
-    itemPage: "./math_add.html",
-    buttomClass: "btn-main-card btn-main-card-disable",
+    itemPage: "./math_minus.html",
+    buttomClass: "btn-main-card",
     buttomText: "Start",
   },
   {
@@ -48,21 +50,36 @@ export const MAIN_CARD_LIST = [
     buttomText: "Start",
   },
 ];
-
-const MATH_OPERATION = ["*", "+", "-"];
+let wrongQty = 0;
 const newARR = [];
 const modalWindow = document.querySelector(".modal-overlay");
+const modalContent = document.querySelector(".modal-content-js");
+let MATH_OPERATION = 0;
 
-export function AddMath(numbers, MATH_OPERATION) {
+export function AddMath(numbers, mathOperation) {
+  MATH_OPERATION = mathOperation;
   let numA = 0,
     numB = 0;
+  let c = 0;
   for (let i = 0; i < 12; i++) {
     numA = Math.floor(Math.random() * (numbers[1] - numbers[0]) + numbers[0]);
     numB = Math.floor(Math.random() * (numbers[1] - numbers[0]) + numbers[0]);
+    if (mathOperation === "+") {
+      c = numA + numB;
+      console.log("c in + AddMath");
+      console.log(c);
+    } else if (mathOperation === "-") {
+      if (numA < numB) {
+        let zamena = numB;
+        numB = numA;
+        numA = zamena;
+      }
+      c = numA - numB;
+    }
     newARR.push({
       first_num: numA,
       second_num: numB,
-      result_plus: numA + numB,
+      result_data: c,
     });
   }
   console.log("newARR:");
@@ -70,28 +87,31 @@ export function AddMath(numbers, MATH_OPERATION) {
   return newARR;
 }
 function checkResults(arrData) {
-  console.log("checkResults");
-  console.log(arrData);
-  console.log(newARR);
+  //   console.log("checkResults");
+  //   console.log(arrData);
+  //   console.log(newARR);
 
   let i = 0;
-
+  wrongQty = 0;
   newARR.forEach((key) => {
-    console.log("key.result_plus ", key.result_plus);
-    console.log("typOf key.result_plus ", typeof key.result_plus);
-    console.log("arrData[i] ", arrData[i]);
-    console.log("typOf arrData[i] ", typeof arrData[i]);
+    // console.log("key.result_plus ", key.result_plus);
+    // console.log("typOf key.result_plus ", typeof key.result_plus);
+    // console.log("arrData[i] ", arrData[i]);
+    // console.log("typOf arrData[i] ", typeof arrData[i]);
     const circleStyle = document.querySelector(`.circle${i + 1}`);
-    if (key.result_plus !== arrData[i]) {
+    if (key.result_data !== arrData[i]) {
       circleStyle.style.backgroundColor = "red";
+      wrongQty = wrongQty + 1;
     }
     circleStyle.style.visibility = "visible";
     i++;
   });
   document.querySelector(".js-form-btn").disabled = true;
+  //   console.log("wrongQty");
+  //   console.log(wrongQty);
 }
 
-export function hendlerClickOk() {
+export function hendlerClickPlusOk() {
   const form = document.querySelector(".js-my-form");
   const formData = new FormData(form);
   const data = {};
@@ -105,5 +125,23 @@ export function hendlerClickOk() {
   //   console.log(data);
   //   console.log(arrData);
   checkResults(arrData);
+  let itemName = "сложение";
+  let itemPage = "./math_add.html";
+  if (MATH_OPERATION === "-") {
+    itemName = "вычитание";
+    itemPage = "./math_minus.html";
+  }
+  let resdata = [
+    {
+      itemName: itemName,
+      itemPage: itemPage,
+      wrongQty: wrongQty,
+    },
+  ];
+
+  onCreateModalWindow(resdata);
+}
+function onCreateModalWindow(resdata) {
   modalWindow.classList.remove("modal-hidden");
+  modalContent.insertAdjacentHTML("beforeend", createModalContent(resdata));
 }
