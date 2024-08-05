@@ -51,6 +51,7 @@ export const MAIN_CARD_LIST = [
 
 const MATH_OPERATION = ["*", "+", "-"];
 const newARR = [];
+const modalWindow = document.querySelector(".modal-overlay");
 
 export function AddMath(numbers, MATH_OPERATION) {
   let numA = 0,
@@ -99,9 +100,10 @@ export function hendlerClickOk() {
     data[key] = value; // OBJ
     arrData.push(Number(data[key])); // Massiv
   });
-  console.log("дата после получения ответа");
-  console.log(formData);
-  console.log(data);
-  console.log(arrData);
+  //   console.log("дата после получения ответа");
+  //   console.log(formData);
+  //   console.log(data);
+  //   console.log(arrData);
   checkResults(arrData);
+  modalWindow.classList.remove("modal-hidden");
 }
