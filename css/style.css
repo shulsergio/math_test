@@ -230,3 +230,41 @@ text-align: center;
 text-wrap: center;
 
 }
+
+.cities-text{
+        margin: 10px auto;
+            padding: 10px 15px;
+            border-radius: 10px;
+            width: 80%;
+            background-color: rgba(202, 209, 251, 0.9);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+}
+.citiesForm{
+        margin: 0 auto;
+            padding: 10px 15px;
+            border-radius: 10px;
+            width: 80%;
+            background-color: rgba(202, 209, 251, 0.9);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+}
+.cities-count-text{
+    margin: 10px 0 0 10px;
+    margin-bottom: 10px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        width: 120px;
+        background-color: rgba(202, 209, 251, 0.9);
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+}
+
+.hidden-all {
+    display: none;
+}

@@ -4,8 +4,8 @@ const list = document.querySelector(".js-list");
 export function createFormMarkupHtml(ARR_NUM_PLUS, mathOperation) {
   let i = 0;
 
-//   console.log("ARR_NUM_PLUS");
-//   console.log(ARR_NUM_PLUS);
+  //   console.log("ARR_NUM_PLUS");
+  //   console.log(ARR_NUM_PLUS);
   const numArray = AddMath(ARR_NUM_PLUS, mathOperation);
   return numArray
     .map(({ first_num, second_num }) => {
@@ -23,9 +23,8 @@ export function createFormMarkupHtml(ARR_NUM_PLUS, mathOperation) {
 export function createMarkupMainCard() {
   console.log("MAIN_CARD_LIST");
   console.log(MAIN_CARD_LIST);
-  return MAIN_CARD_LIST.map(
-    ({ icon, itemName, itemText, itemPage, buttomClass, buttomText }) => {
-      return `<li class="main-item">
+  return MAIN_CARD_LIST.map(({ icon, itemName, itemText, itemPage, buttomClass, buttomText }) => {
+    return `<li class="main-item">
             <div class="for-svg">
               <svg class="icon">
                 <use
@@ -39,8 +38,7 @@ export function createMarkupMainCard() {
             <p class="item-text">${itemText}</p>
             <a href="${itemPage}" class="${buttomClass}">${buttomText}</a>
           </li>`;
-    }
-  ).join("");
+  }).join("");
 }
 
 export function createModalContent(data) {
@@ -60,4 +58,18 @@ export function createModalContent(data) {
             >   `;
     })
     .join("");
+}
+
+export function onCreateCitiesMainText() {
+  const data = JSON.parse(localStorage.getItem("country_obj"));
+  return `
+    <h2>Угадай столицу!</h2>
+    <p>Страна: ${data.country}</p>
+    <p>Столица: ${data.capital}</p>
+    <p>Флаг: <img src="${data.flag}" alt="Flag" width="100" height="80"></p>
+    <ul>
+      <li>${data.cityOne}</li>
+      <li>${data.cityTwo}</li>
+    </ul>
+     `;
 }

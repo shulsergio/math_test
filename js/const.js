@@ -37,8 +37,8 @@ export const MAIN_CARD_LIST = [
     icon: "./img/symbol-defs.svg#icon-bubbles4",
     itemName: "Game City",
     itemText: "Сложение чисел",
-    itemPage: "./math_add.html",
-    buttomClass: "btn-main-card btn-main-card-disable",
+    itemPage: "./cities.html",
+    buttomClass: "btn-main-card",
     buttomText: "Start",
   },
   {

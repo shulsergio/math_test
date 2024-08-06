@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Спочатку нормалізатор -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ---- -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="another-page">
+    <header class="header"></header>
+    <main>
+      <div class="cities-count-text">
+        <p>Счет:</p>
+        <p>Всего игр: 3</p>
+        <p>Угаданно: 2</p>
+      </div>
+      <form class="citiesForm citiesForm-js">
+        <p>Страна Украина, столица:</p>
+        <div>
+          <input type="radio" name="capital" value="Киев" checked />
+          <label for="cityChoice1">Киев</label>
+          <input type="radio" name="capital" value="Харьков" />
+          <label for="cityChoice2">Харьков</label>
+          <input type="radio" name="capital" value="Днепр" />
+          <label for="cityChoice3">Днепр</label>
+        </div>
+        <div>
+          <button type="submit">OK</button>
+        </div>
+      </form>
+      <div class="cities-text hidden-all">
+        <div class="cities-text-js"></div>
+        <button type="button" class="btn-main-card btn-city-next-js">Продолжать</button>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+    <script type="module" src="./js/cities.js "></script>
+  </body>
+</html>

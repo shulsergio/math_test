@@ -1,0 +1,417 @@
+[
+  {
+    "name": "Австрия",
+    "capital": "Вена",
+    "cities": ["Грац", "Линц", "Зальцбург"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg",
+    "coordinates": {"lat": 48.2082, "lng": 16.3738}
+  },
+  {
+    "name": "Бельгия",
+    "capital": "Брюссель",
+    "cities": ["Антверпен", "Гент", "Льеж"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg",
+    "coordinates": {"lat": 50.8503, "lng": 4.3517}
+  },
+  {
+    "name": "Болгария",
+    "capital": "София",
+    "cities": ["Пловдив", "Варна", "Бургас"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg",
+    "coordinates": {"lat": 42.6977, "lng": 23.3219}
+  },
+  {
+    "name": "Великобритания",
+    "capital": "Лондон",
+    "cities": ["Бирмингем", "Манчестер", "Глазго"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
+    "coordinates": {"lat": 51.5074, "lng": -0.1278}
+  },
+  {
+    "name": "Венгрия",
+    "capital": "Будапешт",
+    "cities": ["Дебрецен", "Мишкольц", "Секешфехервар"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg",
+    "coordinates": {"lat": 47.4979, "lng": 19.0402}
+  },
+  {
+    "name": "Греция",
+    "capital": "Афины",
+    "cities": ["Салоники", "Патры", "Ираклион"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg",
+    "coordinates": {"lat": 37.9838, "lng": 23.7275}
+  },
+  {
+    "name": "Дания",
+    "capital": "Копенгаген",
+    "cities": ["Оденсе", "Аархус", "Альборг"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg",
+    "coordinates": {"lat": 55.6761, "lng": 12.5683}
+  },
+  {
+    "name": "Ирландия",
+    "capital": "Дублин",
+    "cities": ["Корк", "Лимерик", "Голуэй"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg",
+    "coordinates": {"lat": 53.3331, "lng": -6.2489}
+  },
+  {
+  "name": "Исландия",
+  "capital": "Рейкьявик",
+  "cities": ["Кефлавик", "Акюрейри", "Хусавик"],
+  "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg",
+  "coordinates": {"lat": 64.1355, "lng": -21.8954}
+},
+  {
+    "name": "Испания",
+    "capital": "Мадрид",
+    "cities": ["Барселона", "Валенсия", "Севилья"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg",
+    "coordinates": {"lat": 40.4168, "lng": -3.7038}
+  },
+  {
+    "name": "Италия",
+    "capital": "Рим",
+    "cities": ["Милан", "Неаполь", "Турин"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg",
+    "coordinates": {"lat": 41.9028, "lng": 12.4964}
+  },
+  {
+    "name": "Латвия",
+    "capital": "Рига",
+    "cities": ["Даугавпилс", "Лиепая", "Юрмала"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg",
+    "coordinates": {"lat": 56.9496, "lng": 24.1059}
+  },
+  {
+    "name": "Литва",
+    "capital": "Вильнюс",
+    "cities": ["Каунас", "Клайпеда", "Шяуляй"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg",
+    "coordinates": {"lat": 54.6872, "lng": 25.2798}
+  },
+  {
+    "name": "Люксембург",
+    "capital": "Люксембург",
+    "cities": ["Эш-сюр-Альзет", "Дифферданж", "Эттельбрук"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg",
+    "coordinates": {"lat": 49.6117, "lng": 6.13}
+  },
+  {
+    "name": "Мальта",
+    "capital": "Валлетта",
+    "cities": ["Слиема", "Биркиркара", "Сент-Джулианс"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg",
+    "coordinates": {"lat": 35.8997, "lng": 14.5147}
+  },
+  {
+    "name": "Нидерланды",
+    "capital": "Амстердам",
+    "cities": ["Роттердам", "Гаага", "Утрехт"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
+    "coordinates": {"lat": 52.3676, "lng": 4.9041}
+  },
+  {
+    "name": "Норвегия",
+    "capital": "Осло",
+    "cities": ["Берген", "Ставангер", "Тронхейм"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg",
+    "coordinates": {"lat": 59.9139, "lng": 10.7522}
+  },
+  {
+    "name": "Польша",
+    "capital": "Варшава",
+    "cities": ["Краков", "Познань", "Гданьск"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg",
+    "coordinates": {"lat": 52.2298, "lng": 21.0118}
+  },
+  {
+    "name": "Португалия",
+    "capital": "Лиссабон",
+    "cities": ["Порту", "Коимбра", "Фуншал"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
+    "coordinates": {"lat": 38.7223, "lng": -9.1399}
+  },
+  {
+    "name": "Румыния",
+    "capital": "Бухарест",
+    "cities": ["Клуж-Напока", "Тимишоара", "Яссы"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg",
+    "coordinates": {"lat": 44.4268, "lng": 26.1025}
+  },
+  {
+    "name": "Словакия",
+    "capital": "Братислава",
+    "cities": ["Кошице", "Нитра", "Прешов"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg",
+    "coordinates": {"lat": 48.1482, "lng": 17.1067}
+  },
+  {
+    "name": "Словения",
+    "capital": "Любляна",
+    "cities": ["Марибор", "Целе", "Копер"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg",
+    "coordinates": {"lat": 46.0511, "lng": 14.5051}
+  },
+  {
+    "name": "Турция",
+    "capital": "Анкара",
+    "cities": ["Стамбул", "Измир", "Бурса"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg",
+    "coordinates": {"lat": 39.9334, "lng": 32.8597}
+  },
+  {
+    "name": "Финляндия",
+    "capital": "Хельсинки",
+    "cities": ["Тампере", "Оулу", "Эспоо"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg",
+    "coordinates": {"lat": 60.1695, "lng": 24.9354}
+  },
+  {
+    "name": "Франция",
+    "capital": "Париж",
+    "cities": ["Марсель", "Лион", "Тулуза"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    "coordinates": {"lat": 48.8566, "lng": 2.3522}
+  },
+  {
+    "name": "Чехия",
+    "capital": "Прага",
+    "cities": ["Брно", "Острава", "Пльзень"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
+    "coordinates": {"lat": 50.0755, "lng": 14.4378}
+  },
+  {
+    "name": "Швеция",
+    "capital": "Стокгольм",
+    "cities": ["Гетеборг", "Мальмё", "Уппсала"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg",
+    "coordinates": {"lat": 59.3293, "lng": 18.0686}
+  },
+  {
+    "name": "Швейцария",
+    "capital": "Берн",
+    "cities": ["Цюрих", "Женева", "Базель"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg",
+    "coordinates": {"lat": 46.9481, "lng": 7.4474}
+  },
+ {
+    "name": "Эстония",
+    "capital": "Таллин",
+    "cities": ["Тарту", "Нарва", "Пярну"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg",
+    "coordinates": {"lat": 59.4370, "lng": 24.7535}
+  },
+  {
+    "name": "Албания",
+    "capital": "Тирана",
+    "cities": ["Дуррес", "Влера", "Шкодер"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg",
+    "coordinates": {"lat": 41.3275, "lng": 19.8189}
+  },
+  {
+    "name": "Грузия",
+    "capital": "Тбилиси",
+    "cities": ["Батуми", "Зугдиди", "Рустави"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg",
+    "coordinates": {"lat": 41.7151, "lng": 44.8271}
+  },
+  {
+    "name": "Германия",
+    "capital": "Берлин",
+    "cities": ["Мюнхен", "Гамбург", "Кельн"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
+    "coordinates": {"lat": 52.5200, "lng": 13.4050}
+  },
+  {
+    "name": "Сербия",
+    "capital": "Белград",
+    "cities": ["Нови Сад", "Ниш", "Крагуевац"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg",
+    "coordinates": {"lat": 44.8176, "lng": 20.4633}
+  },
+  {
+    "name": "Черногория",
+    "capital": "Подгорица",
+    "cities": ["Херцег-Нови", "Будва", "Тиват"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg",
+    "coordinates": {"lat": 42.4411, "lng": 19.2636}
+  },
+  {
+    "name": "Украина",
+    "capital": "Киев",
+    "cities": ["Харьков", "Одесса", "Днепр"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
+    "coordinates": {"lat": 50.4501, "lng": 30.5234}
+  },
+
+  {
+    "name": "Аргентина",
+    "capital": "Буэнос-Айрес",
+    "cities": ["Кордова", "Росарио", "Мендоса"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
+    "coordinates": {"lat": -34.6037, "lng": -58.3816}
+  },
+  {
+    "name": "Бразилия",
+    "capital": "Бразилиа",
+    "cities": ["Рио-де-Жанейро", "Сан-Паулу", "Салвадор"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
+    "coordinates": {"lat": -15.7801, "lng": -47.9292}
+  },
+  {
+    "name": "Канада",
+    "capital": "Оттава",
+    "cities": ["Торонто", "Ванкувер", "Монреаль"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg",
+    "coordinates": {"lat": 45.4215, "lng": -75.6972}
+  },
+  {
+    "name": "Мексика",
+    "capital": "Мехико",
+    "cities": ["Гвадалахара", "Монтрей", "Пуэбла"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
+    "coordinates": {"lat": 19.4326, "lng": -99.1332}
+  },
+  {
+    "name": "США",
+    "capital": "Вашингтон",
+    "cities": ["Нью-Йорк", "Лос-Анджелес", "Чикаго"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+    "coordinates": {"lat": 38.8951, "lng": -77.0369}
+  },
+  {
+    "name": "Чили",
+    "capital": "Сантьяго",
+    "cities": ["Вальпараисо", "Консепсьон", "Ла-Серена"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg",
+    "coordinates": {"lat": -33.4489, "lng": -70.6693}
+  },
+  {
+    "name": "Колумбия",
+    "capital": "Богота",
+    "cities": ["Медельин", "Кали", "Барранкилья"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg",
+    "coordinates": {"lat": 4.6110, "lng": -74.0827}
+  },
+  {
+    "name": "Перу",
+    "capital": "Лима",
+    "cities": ["Arequipa", "Трухильо", "Куско"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg",
+    "coordinates": {"lat": -12.0464, "lng": -77.0428}
+  },
+  {
+    "name": "Венесуэла",
+    "capital": "Каракас",
+    "cities": ["Маркайбо", "Валенсия", "Барселона"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg",
+    "coordinates": {"lat": 10.4918, "lng": -66.9028}
+  },
+  {
+    "name": "Уругвай",
+    "capital": "Монтевидео",
+    "cities": ["Сальто", "Пайсанду", "Дурасно"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg",
+    "coordinates": {"lat": -34.9036, "lng": -56.1881}
+  },
+  {
+    "name": "Китай",
+    "capital": "Пекин",
+    "cities": ["Шанхай", "Гуанчжоу", "Шэньчжэнь"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+    "coordinates": {"lat": 39.9042, "lng": 116.4074}
+  },
+  {
+    "name": "Индия",
+    "capital": "Нью-Дели",
+    "cities": ["Мумбаи", "Калькутта", "Ченнаи"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+    "coordinates": {"lat": 28.6139, "lng": 77.209}
+  },
+  {
+    "name": "Индонезия",
+    "capital": "Джакарта",
+    "cities": ["Сурабая", "Бандунг", "Медан"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
+    "coordinates": {"lat": -6.2088, "lng": 106.8456}
+  },
+  {
+    "name": "Южноафриканская Республика",
+    "capital": "Претория",
+    "cities": ["Йоханнесбург", "Кейптаун", "Дурбан"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
+    "coordinates": {"lat": -25.7461, "lng": 28.1881}
+  },
+  {
+    "name": "Нигерия",
+    "capital": "Абуджа",
+    "cities": ["Лагос", "Кано", "Ибадан"],
+    "flag": "https://en.wikipedia.org/wiki/File:Flag_of_Nigeria.svg#/media/File:Flag_of_Nigeria.svg",
+    "coordinates": {"lat": 9.0579, "lng": 8.6753}
+  },
+  {
+    "name": "Египет",
+    "capital": "Каир",
+    "cities": ["Александрия", "Гиза", "Шарму-эль-Шейх"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
+    "coordinates": {"lat": 30.0444, "lng": 31.2357}
+  },
+  {
+    "name": "Эфиопия",
+    "capital": "Аддис-Абеба",
+    "cities": ["Джиджига", "Бахр Дар", "Мекеле"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg",
+    "coordinates": {"lat": 9.145, "lng": 40.489673}
+  },
+  {
+    "name": "Кения",
+    "capital": "Найроби",
+    "cities": ["Момбаса", "Кисуму", "Наивasha"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg",
+    "coordinates": {"lat": -1.2864, "lng": 36.8172}
+  },
+
+  {
+    "name": "Южная Корея",
+    "capital": "Сеул",
+    "cities": ["Пусан", "Инчхон", "Тэгу"],
+    "flag": "https://en.wikipedia.org/wiki/File:Flag_of_South_Korea.svg",
+    "coordinates": {"lat": 37.5665, "lng": 126.978}
+  },
+  {
+    "name": "Япония",
+    "capital": "Токио",
+    "cities": ["Осака", "Нагоя", "Саппоро"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
+    "coordinates": {"lat": 35.6824, "lng": 139.759}
+  },
+  {
+    "name": "Австралия",
+    "capital": "Канберра",
+    "cities": ["Сидней", "Мельбурн", "Брисбен"],
+    "flag": "https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg",
+    "coordinates": {"lat": -35.2809, "lng": 149.130}
+  },
+    {
+    "name": "Филиппины",
+    "capital": "Манила",
+    "cities": ["Себу", "Давао", "Кагаян-де-Оро"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg",
+    "coordinates": {"lat": 14.5995, "lng": 120.9842}
+  },
+  {
+    "name": "Малайзия",
+    "capital": "Куала-Лумпур",
+    "cities": ["Джорджтаун", "Куала-Теренггану", "Мелакка"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg",
+    "coordinates": {"lat": 3.139, "lng": 101.6869}
+  },
+  {
+    "name": "Вьетнам",
+    "capital": "Ханой",
+    "cities": ["Хошимин", "Хайфон", "Дананг"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg",
+    "coordinates": {"lat": 21.0285, "lng": 105.8542}
+  }
+]
