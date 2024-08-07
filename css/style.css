@@ -17,6 +17,7 @@ body {
 }
 .another-page{
     background-image: url(../img/slide-bg-768-new-min.png);
+    font-size: 16px;
 }
 
 .header{
@@ -51,7 +52,7 @@ body {
 .for-svg{
     padding: 12px;
     border-radius: 50%;
-background: linear-gradient(240deg, #dcdc62 0%,#7ea1e6 50%, #34384C 100%);
+background: linear-gradient(240deg, #dcdc62 0%, #7ea1e6 50%, #34384C 100%);
     box-shadow: 0 0 8px rgba(250, 250, 250, 0.8)
 }
 .item-text-name {
@@ -232,28 +233,30 @@ text-align: center;
 text-wrap: center;
 }
 
+/* ------- cities */
+
 .cities-text{
-        margin: 10px auto;
-            padding: 12px 12px;
-            border-radius: 10px;
-            max-width: 350px;
-            background-color: rgba(var(--wht-sec), 0.85);
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+    margin: 10px auto;
+    padding: 12px 12px;
+    border-radius: 10px;
+    max-width: 350px;
+    background-color: rgba(var(--wht-sec), 0.85);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 
 
 }
 .citiesForm{
-        margin: 0 auto;
-            padding: 12px 12px;
-            border-radius: 10px;
-            max-width: 350px;
-            background-color: rgba(var(--wht-sec), 0.85);
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            align-items: center;
+    margin: 0 auto;
+    padding: 12px 12px;
+    border-radius: 10px;
+    max-width: 350px;
+    background-color: rgba(var(--wht-sec), 0.85);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
 }
 
 .form-block-label{
@@ -276,8 +279,8 @@ input[type="radio"]:checked+label {
     margin-bottom: 10px;
         padding: 10px 15px;
         border-radius: 10px;
-        width: 120px;
-        font-size: 12px;
+        width: 140px;
+        font-size: 14px;
         font-weight: 600;
         background-color: rgba(var(--wht-sec), 0.85);
         display: flex;
@@ -285,7 +288,7 @@ input[type="radio"]:checked+label {
         gap: 4px;
 }
 .cities-count-ttl{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--pink-text);
     font-family: cursive;
@@ -298,7 +301,7 @@ input[type="radio"]:checked+label {
 }
 .about-country-p{
     font-weight: 500;
-        font-size: 16px;
+        font-size: 18px;
             margin-bottom: 12px;
             text-align: center;
 }
@@ -314,7 +317,7 @@ input[type="radio"]:checked+label {
         gap: 4px;
 }
 .about-country-item{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 margin-bottom: 8px;
 }
@@ -340,7 +343,7 @@ max-height: 40px;
 padding: 4px 12px;
 }
 .cities-form-qvsn{
-font-size: 18px;
+font-size: 20px;
 font-weight: 700;
 color: var(--pink-text);
     font-family: cursive;
