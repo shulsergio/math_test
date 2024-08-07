@@ -1,3 +1,4 @@
+import { iziError, iziSuccess, iziWOW } from "./izi.js";
 import {
   onCreateCitiesCountText,
   onCreateCitiesFormText,
@@ -39,6 +40,7 @@ function startData() {
 }
 function hendlerForm(e) {
   e.preventDefault();
+  const numberIzi = [5, 7, 10, 15, 20, 25, 30, 35, 40, 45, 50];
   document.querySelector(".btn-cities-next").classList.add("btn-disable");
   let data = new FormData(citiesForm);
   let formDataObject = 0;
@@ -52,6 +54,9 @@ function hendlerForm(e) {
   console.log(countryObj.capital);
   console.log(formDataObject[1]);
   const winGamesNew = countryObj.capital === formDataObject[1] ? winGamesOld + 1 : winGamesOld;
+  winGamesOld === winGamesNew ? iziError() : iziSuccess();
+  numberIzi.includes(winGamesNew) ? iziWOW(winGamesNew) : "";
+
   localStorage.setItem(LS_WIN_GAME, winGamesNew);
   console.log("winGamesNew-", winGamesNew);
   let currentTtlGames = parseInt(localStorage.getItem("ttl_games"), 10) + 1;

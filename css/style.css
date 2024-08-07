@@ -269,12 +269,11 @@ input[type="radio"]:checked+label {
 
 
 .cities-count-text{
-    margin: 10px 0 0 10px;
-    margin-bottom: 10px;
-        padding: 10px 15px;
-        border-radius: 10px;
-        width: 140px;
-        font-size: 14px;
+margin: 10px 0 10px 10px;
+padding: 10px 15px;
+border-radius: 10px;
+        width: 150px;
+        font-size: 16px;
         font-weight: 600;
         background-color: rgba(var(--wht-sec), 0.85);
         display: flex;
@@ -283,11 +282,15 @@ input[type="radio"]:checked+label {
 }
 .cities-count-ttl{
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--pink-text);
     font-family: cursive;
     text-align: center;
 
+}
+.cities-count-text p{
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .hidden-all {
@@ -337,10 +340,18 @@ margin-bottom: 8px;
     text-align: center;
 }
 .btn-cities-next{
+    font-size: 16px;
 margin: 0 auto;
-max-width: 100px;
+max-width: 120px;
 max-height: 40px;
-padding: 4px 12px;
+padding: 8px 12px;
+}
+.btn-cities-exit{
+        font-size: 10px;
+            margin: 0 auto;
+            max-width: 110px;
+            max-height: 26px;
+            padding: 4px 4px;
 }
 .cities-form-qvsn{
 font-size: 20px;

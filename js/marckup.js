@@ -64,8 +64,10 @@ export function onCreateCitiesCountText() {
   const gameWin = localStorage.getItem("win_games");
   return `
           <p class="cities-count-ttl">Счет</p>
-        <p>Всего игр : ${gameTtl}</p>
-        <p>Угаданно : ${gameWin}</p>`;
+        <p>Всего игр: ${gameTtl}</p>
+        <p>Угаданно: ${gameWin}</p>
+              <a href="./index.html" class="btn-main-card btn-cities-exit ">Выйти на главную</a>
+`;
 }
 
 export function onCreateCitiesFormText() {
@@ -90,7 +92,10 @@ export function onCreateCitiesFormText() {
           </div>`;
     })
     .join("");
-  let strThree = `</div><div><button type="submit" class="btn-main-card btn-cities-next">OK</button></div>`;
+  let strThree = `</div><div>
+
+ 
+  <button type="submit" class="btn-main-card btn-cities-next">OK</button></div>`;
   return strOne + strTwo + strThree;
 }
 function shuffleArray(array) {
