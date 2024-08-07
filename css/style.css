@@ -230,7 +230,7 @@ text-wrap: center;
 /* ------- cities */
 
 .cities-text{
-    margin: 10px auto;
+    margin: 10px 0 0 15px;
     padding: 12px 12px;
     border-radius: 10px;
     max-width: 350px;
@@ -242,7 +242,7 @@ text-wrap: center;
 
 }
 .citiesForm{
-    margin: 0 auto;
+    margin: 10px 0 0 15px;
     padding: 12px 12px;
     border-radius: 10px;
     max-width: 350px;
@@ -269,7 +269,7 @@ input[type="radio"]:checked+label {
 
 
 .cities-count-text{
-margin: 10px 0 10px 10px;
+margin: 10px 0 10px 15px;
 padding: 10px 15px;
 border-radius: 10px;
         width: 150px;
