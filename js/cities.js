@@ -39,6 +39,7 @@ function startData() {
 }
 function hendlerForm(e) {
   e.preventDefault();
+  document.querySelector(".btn-cities-next").classList.add("btn-disable");
   let data = new FormData(citiesForm);
   let formDataObject = 0;
   for (let value of data.entries()) {

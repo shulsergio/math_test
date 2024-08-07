@@ -90,7 +90,7 @@ export function onCreateCitiesFormText() {
           </div>`;
     })
     .join("");
-  let strThree = `</div><div><button type="submit" class="btn-main-card btn-">OK</button></div>`;
+  let strThree = `</div><div><button type="submit" class="btn-main-card btn-cities-next">OK</button></div>`;
   return strOne + strTwo + strThree;
 }
 function shuffleArray(array) {

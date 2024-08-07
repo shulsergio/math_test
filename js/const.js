@@ -22,7 +22,7 @@ export const MAIN_CARD_LIST = [
     itemName: "Multiply",
     itemText: "Умножение чисел",
     itemPage: "./math_add.html",
-    buttomClass: "btn-main-card btn-main-card-disable",
+    buttomClass: "btn-main-card btn-disable",
     buttomText: "Start",
   },
   {
@@ -30,7 +30,7 @@ export const MAIN_CARD_LIST = [
     itemName: "Game Number",
     itemText: "Сложение чисел",
     itemPage: "./math_add.html",
-    buttomClass: "btn-main-card btn-main-card-disable",
+    buttomClass: "btn-main-card btn-disable",
     buttomText: "Start",
   },
   {
@@ -46,7 +46,7 @@ export const MAIN_CARD_LIST = [
     itemName: "reserv",
     itemText: "",
     itemPage: "",
-    buttomClass: "btn-main-card btn-main-card-disable",
+    buttomClass: "btn-main-card btn-disable",
     buttomText: "Start",
   },
 ];
