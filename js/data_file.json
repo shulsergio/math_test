@@ -413,5 +413,12 @@
     "cities": ["Хошимин", "Хайфон", "Дананг"],
     "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg",
     "coordinates": {"lat": 21.0285, "lng": 105.8542}
-  }
+  },
+{
+  "name": "Россия",
+  "capital": "Москва",
+  "cities": ["Санкт-Петербург", "Курск", "Белгород"],
+  "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/2560px-Flag_of_Russia.svg.png",
+  "coordinates": {"lat": 55.7558, "lng": 37.6173}
+}
 ]

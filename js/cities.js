@@ -1,4 +1,8 @@
-import { onCreateCitiesMainText } from "./marckup.js";
+import {
+  onCreateCitiesCountText,
+  onCreateCitiesFormText,
+  onCreateCitiesMainText,
+} from "./marckup.js";
 const LS_KEY_CHOISECAPITAL = "capital";
 const LS_TTL_GAME = "ttl_games";
 const LS_WIN_GAME = "win_games";
@@ -12,6 +16,8 @@ localStorage.setItem(LS_BOOLEAN_DATA, 0);
 const citiesMainText = document.querySelector(".cities-text-js");
 const citiesText = document.querySelector(".cities-text");
 const citiesForm = document.querySelector(".citiesForm-js");
+const btnNextCity = document.querySelector(".btn-city-next-js");
+const citiesCount = document.querySelector(".city-count-js");
 let countries = [];
 function startData() {
   citiesText.classList.add("hidden-all");
@@ -39,10 +45,16 @@ function hendlerForm(e) {
     formDataObject = value;
   }
   console.log(formDataObject[1]);
-  localStorage.setItem(LS_KEY_CHOISECAPITAL, JSON.stringify(formDataObject[1]));
-  let currentTtlGames = localStorage.getItem("ttl_games");
-  currentTtlGames = parseInt(currentTtlGames, 10) + 1;
-  localStorage.setItem(LS_TTL_GAME, JSON.stringify(currentTtlGames));
+  const countryObj = JSON.parse(localStorage.getItem("country_obj"));
+  const winGamesOld = parseInt(localStorage.getItem("win_games"), 10);
+  console.log(winGamesOld);
+  console.log(countryObj.capital);
+  console.log(formDataObject[1]);
+  const winGamesNew = countryObj.capital === formDataObject[1] ? winGamesOld + 1 : winGamesOld;
+  localStorage.setItem(LS_WIN_GAME, winGamesNew);
+  console.log("winGamesNew-", winGamesNew);
+  let currentTtlGames = parseInt(localStorage.getItem("ttl_games"), 10) + 1;
+  localStorage.setItem(LS_TTL_GAME, currentTtlGames);
   citiesText.classList.remove("hidden-all");
 }
 
@@ -57,22 +69,24 @@ function newCitiesData() {
   console.log(country);
   console.log(citiesOnly);
   let choiceNumber = Math.floor(Math.random() * country.length);
-
+  let cityNotCountryOne = citiesOnly[Math.floor(Math.random() * citiesOnly.length)];
+  let cityNotCountryTwo = citiesOnly[Math.floor(Math.random() * citiesOnly.length)];
+  let cityNotCountryThree = citiesOnly[Math.floor(Math.random() * citiesOnly.length)];
   let mainChoiceDataObj = {
     country: country[choiceNumber],
     capital: countries[choiceNumber].capital,
     flag: countries[choiceNumber].flag,
+    cities: countries[choiceNumber].cities,
     coordinates: countries[choiceNumber].coordinates,
-    cityOne: citiesOnly[Math.floor(Math.random() * citiesOnly.length)],
-    cityTwo: citiesOnly[Math.floor(Math.random() * citiesOnly.length)],
+    citiesNotCountry: [cityNotCountryOne, cityNotCountryTwo, cityNotCountryThree],
   };
   console.log(mainChoiceDataObj);
   localStorage.setItem(LS_COUNTRY_OBJ, JSON.stringify(mainChoiceDataObj));
+  citiesForm.innerHTML = onCreateCitiesFormText();
+  citiesCount.innerHTML = onCreateCitiesCountText();
   citiesMainText.innerHTML = onCreateCitiesMainText();
 }
 
 startData();
-const btnNextCity = document.querySelector(".btn-city-next-js");
-btnNextCity.addEventListener("click", () => {
-  startData(); // Обновляем данные при клике
-});
+
+btnNextCity.addEventListener("click", startData);
