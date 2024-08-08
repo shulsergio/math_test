@@ -63,9 +63,8 @@ function hendlerForm(e) {
   localStorage.setItem(LS_WIN_GAME, winGamesNew);
   console.log("winGamesNew-", winGamesNew);
   let currentTtlGames = parseInt(localStorage.getItem("ttl_games"), 10) + 1;
-  console.log("currentTtlGames-", currentTtlGames);
-  currentTtlGames % 10 === 0 ? onCitiesFinishModalText() : "";
   localStorage.setItem(LS_TTL_GAME, currentTtlGames);
+  currentTtlGames % 10 === 0 ? onCitiesFinishModalText() : "";
   citiesCount.innerHTML = onCreateCitiesCountText();
   citiesText.classList.remove("hidden-all");
 }
@@ -116,9 +115,7 @@ async function onBtnSaveName(e) {
 citiesModalWindow.classList.remove("name-modal-hidden");
 citiesFormNameInput.addEventListener("submit", async (e) => {
   e.preventDefault();
-  await onBtnSaveName(e); // ждём выполнения
-  startData(); // вызываем после
+  await onBtnSaveName(e);
+  startData();
 });
-// citiesFormNameInput.addEventListener("submit", onBtnSaveName);
-// startData();
 btnNextCity.addEventListener("click", startData);

@@ -410,6 +410,7 @@ color: var(--blue-text);
 color: var(--blue-text);
 }
 .cities-id-name-input{
+    margin-bottom: 20px;
 border: 1px solid #cccccc; 
 border-radius: 3px;
 height: 24px; 
@@ -418,13 +419,18 @@ color: #cccccc;
 font-size: 12px; 
 font-family: Tahoma; 
 }
+
 .cities-form{
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+}
+.cities-form button{
+    margin-top: 16px;
 }
 .name-modal-hidden {
     display: none;
 }
 .btn-cities-finish{
+    margin-top: 30px;
     font-size: 12px;
     max-width: 140px;
     max-height: 40px;

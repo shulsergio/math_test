@@ -131,7 +131,22 @@ export function onCreateCitiesMainText() {
 }
 
 export function onCreateCitiesModalText(data = "start") {
-  return ` <p class="input-model-text">GOOODDDDDD!!!!!!</p>
+  let text = "";
+  const namePl = localStorage.getItem("player_name");
+  const gamesWin = parseInt(localStorage.getItem("win_games"), 10);
+  const gamesTtl = parseInt(localStorage.getItem("ttl_games"), 10);
+  console.log(gamesWin, gamesTtl, gamesWin / gamesTtl);
+  if (gamesWin / gamesTtl < 0.3) {
+    text = "Нужно еще учить города";
+  } else if (gamesWin / gamesTtl >= 0.3 && gamesWin / gamesTtl < 0.8) {
+    text = "Хороший результат, но нужно еще чуть выучить";
+  } else {
+    text = "ОГО! Ты хорошо знаешь столицы!!";
+  }
+  return ` <p class="cities-form-qvsn">${namePl}</p>
+<p class="input-model-text">Правильных ответов:</p>
+<p class="input-model-text">${gamesWin} из ${gamesTtl}</p>
+<p class="input-model-text">${text}</p>  
 <button type="button" class="btn-main-card btn-cities-finish" onclick="window.location.href='./index.html'">
   На главную
 </button>
