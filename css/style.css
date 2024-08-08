@@ -30,11 +30,6 @@ body {
     font-size: 16px;
 }
 
-
-
-.header{
-    height: 80px;
-}
 .container{
     padding: 12px 8px;
 }
@@ -105,9 +100,6 @@ background: linear-gradient(240deg, #0047d0 0%, #1e68f6 50%, #0055ff 80%);
 box-shadow: 0 4px 4px #4885ff;
 }
 
-.footer{
-    height: 80px;
-}
 /* ----- math - add --- */
 .math-add-container{
     width: 100%;
@@ -435,4 +427,8 @@ font-family: Tahoma;
     max-width: 140px;
     max-height: 40px;
     padding: 8px 8px;
+}
+.nav-main-img{
+  padding: 15px 10px;
+  margin: 0 auto;
 }
