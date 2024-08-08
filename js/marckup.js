@@ -4,8 +4,6 @@ const list = document.querySelector(".js-list");
 export function createFormMarkupHtml(ARR_NUM_PLUS, mathOperation) {
   let i = 0;
 
-  //   console.log("ARR_NUM_PLUS");
-  //   console.log(ARR_NUM_PLUS);
   const numArray = AddMath(ARR_NUM_PLUS, mathOperation);
   return numArray
     .map(({ first_num, second_num }) => {
@@ -60,24 +58,23 @@ export function createModalContent(data) {
     .join("");
 }
 export function onCreateCitiesCountText() {
-  const gameTtl = localStorage.getItem("ttl_games");
-  const gameWin = localStorage.getItem("win_games");
   return `
           <p class="cities-count-ttl">Счет</p>
-        <p>Всего игр: ${gameTtl}</p>
-        <p>Угаданно: ${gameWin}</p>
+        <p>Всего игр: ${localStorage.getItem("ttl_games")}</p>
+        <p>Угаданно: ${localStorage.getItem("win_games")}</p>
               <a href="./index.html" class="btn-main-card btn-cities-exit ">Выйти на главную</a>
 `;
 }
 
 export function onCreateCitiesFormText() {
   const data = JSON.parse(localStorage.getItem("country_obj"));
+  const plName = localStorage.getItem("player_name");
   const gameTtl = localStorage.getItem("ttl_games");
   let array = [data.capital, ...data.citiesNotCountry];
   array = shuffleArray(array);
   let i = 0;
   let strOne = `
-        <p class="cities-form-qvsn">Вопрос #${parseInt(gameTtl) + 1}</p>
+        <p class="cities-form-qvsn">${plName}, вопрос #${parseInt(gameTtl) + 1}</p>
         <p class="cities-form">Страна - <span> ${data.country}</span></p>
         <p class="cities-form">Выбери столицу:</p>
         <div class="form-block">`;
@@ -93,9 +90,7 @@ export function onCreateCitiesFormText() {
     })
     .join("");
   let strThree = `</div><div>
-
- 
-  <button type="submit" class="btn-main-card btn-cities-next">OK</button></div>`;
+  <button type="submit" class="btn-main-card btn-cities-next btn-ok-js">OK</button></div>`;
   return strOne + strTwo + strThree;
 }
 function shuffleArray(array) {
@@ -133,4 +128,12 @@ export function onCreateCitiesMainText() {
           </ul>
         </div>
      `;
+}
+
+export function onCreateCitiesModalText(data = "start") {
+  return ` <p class="input-model-text">GOOODDDDDD!!!!!!</p>
+<button type="button" class="btn-main-card btn-cities-finish" onclick="window.location.href='./index.html'">
+  На главную
+</button>
+<button type="button" class="btn-main-card btn-cities-finish btn-finish-js">Давай еще раз</button>`;
 }

@@ -95,10 +95,6 @@ function checkResults(arrData) {
   let i = 0;
   wrongQty = 0;
   newARR.forEach((key) => {
-    // console.log("key.result_plus ", key.result_plus);
-    // console.log("typOf key.result_plus ", typeof key.result_plus);
-    // console.log("arrData[i] ", arrData[i]);
-    // console.log("typOf arrData[i] ", typeof arrData[i]);
     const circleStyle = document.querySelector(`.circle${i + 1}`);
     if (key.result_data !== arrData[i]) {
       circleStyle.style.backgroundColor = "red";
@@ -108,8 +104,6 @@ function checkResults(arrData) {
     i++;
   });
   document.querySelector(".js-form-btn").disabled = true;
-  //   console.log("wrongQty");
-  //   console.log(wrongQty);
 }
 
 export function hendlerClickPlusOk() {
@@ -121,10 +115,7 @@ export function hendlerClickPlusOk() {
     data[key] = value; // OBJ
     arrData.push(Number(data[key])); // Massiv
   });
-  //   console.log("дата после получения ответа");
-  //   console.log(formData);
-  //   console.log(data);
-  //   console.log(arrData);
+
   checkResults(arrData);
   let itemName = "сложение";
   let itemPage = "./math_add.html";

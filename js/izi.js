@@ -1,7 +1,7 @@
 export function iziSuccess() {
   iziToast.success({
-    title: "Верно!!!",
-    message: "Ты угадал ",
+    title: "ООО!!!",
+    message: "И это правильно!!! ",
     position: "topRight",
     timeout: 3500,
     color: "green",
