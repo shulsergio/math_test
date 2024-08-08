@@ -371,12 +371,11 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg",
     "coordinates": {"lat": -1.2864, "lng": 36.8172}
   },
-
   {
     "name": "Южная Корея",
     "capital": "Сеул",
     "cities": ["Пусан", "Инчхон", "Тэгу"],
-    "flag": "https://en.wikipedia.org/wiki/File:Flag_of_South_Korea.svg",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
     "coordinates": {"lat": 37.5665, "lng": 126.978}
   },
   {
@@ -420,5 +419,75 @@
   "cities": ["Санкт-Петербург", "Курск", "Белгород"],
   "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/2560px-Flag_of_Russia.svg.png",
   "coordinates": {"lat": 55.7558, "lng": 37.6173}
+},
+  {
+    "name": "Кипр",
+    "capital": "Никосия",
+    "cities": ["Лимасол", "Ларнака", "Фамагуста"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_Cyprus.svg/1920px-Flag_of_Cyprus.svg.png",
+    "coordinates": {"lat": 35.1264, "lng": 33.4299}
+  },
+  {
+    "name": "Македония",
+    "capital": "Скопье",
+    "cities": ["Битола", "Охрид", "Куманово"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_North_Macedonia.svg/1920px-Flag_of_North_Macedonia.svg.png",
+    "coordinates": {"lat": 41.9981, "lng": 21.4254}
+  },
+  {
+    "name": "Беларусь",
+    "capital": "Минск",
+    "cities": ["Гомель", "Могилев", "Витебск"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/1920px-Flag_of_Belarus.svg.png",
+    "coordinates": {"lat": 53.9006, "lng": 27.5590}
+  },
+  {
+    "name": "Шри-Ланка",
+    "capital": "Коломбо",
+    "cities": ["Канди", "Джафна", "Гампаха"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_Sri_Lanka.svg/1920px-Flag_of_Sri_Lanka.svg.png",
+    "coordinates": {"lat": 6.9271, "lng": 79.9610}
+  },
+  {
+    "name": "Гана",
+    "capital": "Аккра",
+    "cities": ["Кумаси", "Тамале", "Кофоридуа"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1920px-Flag_of_Ghana.svg.png",
+    "coordinates": {"lat": 5.6037, "lng": -0.1870}
+  },
+  {
+    "name": "Гренада",
+    "capital": "Сент-Джорджес",
+    "cities": ["Гранд-Анс", "Стаунтинг", "Харрис"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Grenada.svg/1920px-Flag_of_Grenada.svg.png",
+    "coordinates": {"lat": 12.0565, "lng": -61.7488}
+  },
+  {
+  "name": "Ямайка",
+  "capital": "Кингстон",
+  "cities": ["Мобайл", "Монтего-Бей", "Оча-Риос"],
+  "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Jamaica.svg",
+  "coordinates": {"lat": 18.1096, "lng": -77.2975}
+},
+{
+  "name": "Парагвай",
+  "capital": "Асунсьон",
+  "cities": ["Сьюдад-дель-Эсте", "Педро-Хуан-Кабальеро", "Encarnación"],
+  "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Paraguay.svg",
+  "coordinates": {"lat": -25.2637, "lng": -57.5759}
+},
+{
+  "name": "Боливия",
+  "capital": "Сукре",
+  "cities": ["Ла-Пас", "Оруро", "Потоси"],
+  "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg",
+  "coordinates": {"lat": -16.5000, "lng": -68.1193}
+},
+{
+  "name": "Суринам",
+  "capital": "Парамарибо",
+  "cities": ["Lelydorp", "Nieuw Nickerie", "Moengo"],
+  "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg",
+  "coordinates": {"lat": 5.8663, "lng": -55.1672}
 }
 ]

@@ -394,7 +394,7 @@ color: var(--blue-text);
     top: 30px;
     left: 0;
     border: 1px solid rgb(85, 0, 255);
-        border-radius: 10px;
+        border-radius: 15px;
     padding: 30px 15px;
     width: 90%;
     min-height: 300px;
