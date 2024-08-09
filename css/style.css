@@ -232,7 +232,9 @@ text-wrap: center;
 }
 
 /* ------- cities */
-
+.section{
+    min-height: 400px;
+}
 .cities-text{
     margin: 10px 0 0 15px;
     padding: 12px 12px;
