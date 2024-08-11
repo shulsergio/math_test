@@ -417,7 +417,7 @@
   "name": "Россия",
   "capital": "Москва",
   "cities": ["Санкт-Петербург", "Курск", "Белгород"],
-  "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/2560px-Flag_of_Russia.svg.png",
+  "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg",
   "coordinates": {"lat": 55.7558, "lng": 37.6173}
 },
   {
@@ -431,35 +431,35 @@
     "name": "Македония",
     "capital": "Скопье",
     "cities": ["Битола", "Охрид", "Куманово"],
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_North_Macedonia.svg/1920px-Flag_of_North_Macedonia.svg.png",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_North_Macedonia.svg",
     "coordinates": {"lat": 41.9981, "lng": 21.4254}
   },
   {
     "name": "Беларусь",
     "capital": "Минск",
     "cities": ["Гомель", "Могилев", "Витебск"],
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/1920px-Flag_of_Belarus.svg.png",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg",
     "coordinates": {"lat": 53.9006, "lng": 27.5590}
   },
   {
     "name": "Шри-Ланка",
     "capital": "Коломбо",
     "cities": ["Канди", "Джафна", "Гампаха"],
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_Sri_Lanka.svg/1920px-Flag_of_Sri_Lanka.svg.png",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg",
     "coordinates": {"lat": 6.9271, "lng": 79.9610}
   },
   {
     "name": "Гана",
     "capital": "Аккра",
     "cities": ["Кумаси", "Тамале", "Кофоридуа"],
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1920px-Flag_of_Ghana.svg.png",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg",
     "coordinates": {"lat": 5.6037, "lng": -0.1870}
   },
   {
     "name": "Гренада",
     "capital": "Сент-Джорджес",
     "cities": ["Гранд-Анс", "Стаунтинг", "Харрис"],
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Grenada.svg/1920px-Flag_of_Grenada.svg.png",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg",
     "coordinates": {"lat": 12.0565, "lng": -61.7488}
   },
   {
@@ -489,5 +489,61 @@
   "cities": ["Лелидорп", "Ньив-Никкери", "Мунго"],
   "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg",
   "coordinates": {"lat": 5.8663, "lng": -55.1672}
-}
+},
+  {
+    "name": "Шотландия",
+    "capital": "Эдинбург",
+    "cities": ["Глазго", "Абердин", "Инвернесс"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg",
+    "coordinates": {"lat": 56.4907, "lng": -4.2026}
+  },
+  {
+    "name": "Андорра",
+    "capital": "Андорра-ла-Велья",
+    "cities": ["Эсглесия", "Сант-Джулия-де-Лория", "Ордино"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg",
+    "coordinates": {"lat": 42.5078, "lng": 1.5211}
+  },
+  {
+    "name": "Хорватия",
+    "capital": "Загреб",
+    "cities": ["Сплит", "Риека", "Дубровник"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg",
+    "coordinates": {"lat": 45.8150, "lng": 15.9819}
+  },
+  {
+    "name": "Азербайджан",
+    "capital": "Баку",
+    "cities": ["Гянджа", "Ленкорань", "Шемахы"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg",
+    "coordinates": {"lat": 40.4093, "lng": 49.8671}
+  },
+  {
+    "name": "Пакистан",
+    "capital": "Исламабад",
+    "cities": ["Лахор", "Карчи", "Равалпинди"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg",
+    "coordinates": {"lat": 30.3753, "lng": 69.3451}
+  },
+  {
+    "name": "Таиланд",
+    "capital": "Бангкок",
+    "cities": ["Чиангмай", "Паттайя", "Хуа Хин"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg",
+    "coordinates": {"lat": 15.8700, "lng": 100.9925}
+  },
+  {
+    "name": "Тайвань",
+    "capital": "Тайбэй",
+    "cities": ["Каосюн", "Тайчжун", "Тainan"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg",
+    "coordinates": {"lat": 23.6978, "lng": 120.9605}
+  },
+  {
+    "name": "Зимбабве",
+    "capital": "Хараре",
+    "cities": ["Булевейо", "Гweru", "Масвинго"],
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg",
+    "coordinates": {"lat": -19.0154, "lng": 29.1549}
+  }
 ]
