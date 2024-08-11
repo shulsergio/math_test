@@ -43,6 +43,14 @@ export const MAIN_CARD_LIST = [
     buttomText: "Start",
   },
   {
+    icon: "./img/symbol-defs.svg#icon-users",
+    itemName: "English Words",
+    itemText: "Изучаем English",
+    itemPage: "",
+    buttomClass: "btn-main-card btn-disable",
+    buttomText: "Start",
+  },
+  {
     icon: "./img/symbol-defs.svg#icon-hour-glass",
     itemName: "Game Number",
     itemText: "Игра - угадай число",
@@ -62,7 +70,7 @@ export function AddMath(numbers, mathOperation) {
   let numA = 0,
     numB = 0;
   let c = 0;
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 10; i++) {
     numA = Math.floor(Math.random() * (numbers[1] - numbers[0]) + numbers[0]);
     numB = Math.floor(Math.random() * (numbers[1] - numbers[0]) + numbers[0]);
     if (mathOperation === "+") {

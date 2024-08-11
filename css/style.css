@@ -78,7 +78,7 @@ z-index: 1000;
 }
 
 .mobmenu-modal-content{
-    background: linear-gradient(240deg, #0055ff 0%, #1e68f6 40%, #003aae 80%);
+    background: linear-gradient(240deg, #0041c4 0%, #13449e 40%, #062a72 80%);
     color: var(--wht-main);
 padding: 100px 50px;
     border-radius: 8px;
@@ -116,7 +116,7 @@ width: 100%;
         font-weight: 600;
 }
 .modal-link-hide {
-    color: #a3a3a3;
+    color: #606060;
 }
 
 .mobmenu-modal-item {
@@ -217,8 +217,8 @@ box-shadow: 0 4px 4px #4885ff;
 
 /* ----- math - add --- */
 .math-add-container{
-    width: 100%;
-
+max-width: 100%;
+padding: 12px 12px;
 }
 .btn-back{
     align-content: left;
@@ -228,7 +228,7 @@ box-shadow: 0 4px 4px #4885ff;
     flex-direction: column;
     align-items: center;
     gap: 12px;
-            color: #000437;
+    color: #000437;
 }
 .top-text-block{
 display: flex;
@@ -236,7 +236,7 @@ flex-direction: column;
 align-items: center;
 gap: 16px;
 padding: 15px 10px;
-width: 260px;
+width: 300px;
 border-radius: 8px;
 backdrop-filter: blur(4px);
 background: rgba(202, 209, 251, 0.4);
@@ -245,9 +245,9 @@ box-shadow: 0 2px 4px rgba(54, 56, 67, 0.6);
 }
 
 .form-list-elmnts{
-    padding: 10px;
+padding: 15px 10px;
 align-items: center;
-    width: 260px;
+min-width: 300px;
     border-radius: 8px;
 display: flex;
 flex-direction: column;
@@ -274,15 +274,15 @@ backdrop-filter: blur(4px);
 }
 
 .field{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
-    width: 110px;
+    min-width: 120px;
     color: #000875;
 }
 .form-result {
     padding-left: 6px;
     width: 50px;
-    font-size: 20px;
+    font-size: 22px;
     border: 1px solid #b0bec5;
     border-radius: 4px;
     background-color: #e1f5fe;
@@ -314,7 +314,7 @@ backdrop-filter: blur(4px);
     align-items: center;
         width: 100%;
 height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.3);
         z-index: 100;
     }
 .modal-hidden{
@@ -322,13 +322,13 @@ height: 100%;
 }
 .modal-content {
     position: relative;
-    top:0;
-    left:0;
+    top: -18%;
+    left: 0;
     border: 1px solid rgb(85, 0, 255);
     border-radius: 10px;
-    padding: 16px 8px;
+    padding: 12px 8px;
     width: 90%;
-    min-height: 180px;
+    /* min-height: 180px; */
     background-color: rgb(255, 255, 255, 0.9);
 text-align: center;
 }
