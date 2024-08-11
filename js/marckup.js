@@ -129,8 +129,8 @@ export function onCreateCitiesMainText() {
             </li>
           </ul>
         </div>
-          <a href="https://www.google.com/maps/@${data.coordinates.lat},${data.coordinates.lng},${zoom}z" target="_blank">Открыть столицу на гугл картах</a>
-     `;
+ <div class="gmap-link" >         <a href="https://www.google.com/maps/@${data.coordinates.lat},${data.coordinates.lng},${zoom}z" target="_blank">Открыть столицу на гугл картах</a>
+ </div>    `;
 }
 
 export function onCreateCitiesModalText(data = "start") {

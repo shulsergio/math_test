@@ -297,14 +297,14 @@
   {
     "name": "Перу",
     "capital": "Лима",
-    "cities": ["Arequipa", "Трухильо", "Куско"],
+    "cities": ["Арекипа", "Трухильо", "Куско"],
     "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg",
     "coordinates": {"lat": -12.0464, "lng": -77.0428}
   },
   {
     "name": "Венесуэла",
     "capital": "Каракас",
-    "cities": ["Маркайбо", "Валенсия", "Барселона"],
+    "cities": ["Маркайбо", "Баркисимето", "Матурин"],
     "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg",
     "coordinates": {"lat": 10.4918, "lng": -66.9028}
   },
@@ -424,7 +424,7 @@
     "name": "Кипр",
     "capital": "Никосия",
     "cities": ["Лимасол", "Ларнака", "Фамагуста"],
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_Cyprus.svg/1920px-Flag_of_Cyprus.svg.png",
+    "flag": "https://https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg",
     "coordinates": {"lat": 35.1264, "lng": 33.4299}
   },
   {
@@ -472,7 +472,7 @@
 {
   "name": "Парагвай",
   "capital": "Асунсьон",
-  "cities": ["Сьюдад-дель-Эсте", "Педро-Хуан-Кабальеро", "Encarnación"],
+  "cities": ["Сьюдад-дель-Эсте", "Педро-Хуан-Кабальеро", "Энкарнасьон"],
   "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Paraguay.svg",
   "coordinates": {"lat": -25.2637, "lng": -57.5759}
 },
@@ -486,7 +486,7 @@
 {
   "name": "Суринам",
   "capital": "Парамарибо",
-  "cities": ["Lelydorp", "Nieuw Nickerie", "Moengo"],
+  "cities": ["Лелидорп", "Ньив-Никкери", "Мунго"],
   "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg",
   "coordinates": {"lat": 5.8663, "lng": -55.1672}
 }

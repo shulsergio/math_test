@@ -43,7 +43,7 @@ export const MAIN_CARD_LIST = [
     buttomText: "Start",
   },
   {
-    icon: "./img/symbol-defs.svg#icon-users",
+    icon: "./img/symbol-defs.svg#icon-user-english",
     itemName: "English Words",
     itemText: "Изучаем English",
     itemPage: "",

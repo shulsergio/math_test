@@ -545,8 +545,7 @@ font-family: Tahoma;
     max-height: 40px;
     padding: 8px 8px;
 }
-.cities-map{
-    width: 300px;
-    height: 200px;
-        position: relative;
+.gmap-link{
+margin-top: 15px;
+text-align: center;
 }
