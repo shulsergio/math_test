@@ -23,6 +23,7 @@ const citiesModalWindow = document.querySelector(".cities-modal-overlay");
 const citiesModalContent = document.querySelector(".cities-modal-content-js");
 const citiesFormNameInput = document.querySelector(".form-cities-name-input");
 let countries = [];
+const choiceNumberArr = [];
 
 //----- start
 function startData() {
@@ -71,6 +72,7 @@ function hendlerForm(e) {
 }
 
 function newCitiesData() {
+  let choiceNumber = -1;
   const country = countries.reduce((acc, item) => {
     return [...acc, item.name];
   }, []);
@@ -79,7 +81,18 @@ function newCitiesData() {
   }, []);
   console.log(country);
   console.log(citiesOnly);
-  let choiceNumber = Math.floor(Math.random() * country.length);
+  do {
+    choiceNumber = Math.floor(Math.random() * country.length);
+  } while (choiceNumberArr.includes(choiceNumber));
+
+  console.log("country.length- ", country.length);
+  console.log("choiceNumber- ", choiceNumber);
+  choiceNumberArr.push(choiceNumber);
+  console.log("choiceNumberArr - ", choiceNumberArr);
+  if (choiceNumberArr.length === 70) {
+    choiceNumberArr.length = 0;
+  }
+
   let cityNotCountryOne = citiesOnly[Math.floor(Math.random() * citiesOnly.length)];
   let cityNotCountryTwo = citiesOnly[Math.floor(Math.random() * citiesOnly.length)];
   let cityNotCountryThree = citiesOnly[Math.floor(Math.random() * citiesOnly.length)];
