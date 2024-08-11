@@ -34,6 +34,121 @@ body {
     padding: 12px 8px;
 }
 
+.header-container{
+    padding: 15px 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+justify-content: space-between;
+
+}
+.nav-main-img {
+    margin: 0 10px;
+}
+.header-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  fill: var(--wht-main);
+margin: 0;
+padding: 2;
+    }
+
+.mobmenu-modal-overlay{
+
+    visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+background: #000;
+z-index: 1000;
+
+}
+.mobmenu-modal-hidden {
+        transform: translateX(100%);
+            transition: transform 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.mobmenu-modal-content{
+    background: linear-gradient(240deg, #0055ff 0%, #1e68f6 40%, #003aae 80%);
+    color: var(--wht-main);
+padding: 100px 50px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.mob-close {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    fill: var(--wht-main);
+        }
+
+.mobmenu-modal-list{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+width: 100%;
+
+}
+.mobmenu-modal-link{
+    padding-left: 10px;
+    color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+}
+.modal-link-hide {
+    color: #a3a3a3;
+}
+
+.mobmenu-modal-item {
+
+    position: relative;
+    /* Для того чтобы псевдоэлемент располагался относительно родителя */
+    padding-bottom: 8px;
+    /* Отступ снизу для места под линию */
+}
+
+.mobmenu-modal-item::after {
+    content: "";
+    /* Псевдоэлемент без текста */
+    display: block;
+    /* Псевдоэлемент как блочный элемент */
+    width: 100%;
+    /* Ширина линии равна ширине родителя */
+    height: 1px;
+    /* Высота линии */
+    background-color: #fff;
+    /* Цвет линии */
+    position: absolute;
+    /* Абсолютное позиционирование */
+    bottom: 0;
+    /* Линия у нижнего края элемента списка */
+    left: 0;
+    /* Линия прикреплена к левому краю элемента */
+}
+
+
+
+        
 .main-list
 {
     display: flex;
@@ -429,8 +544,4 @@ font-family: Tahoma;
     max-width: 140px;
     max-height: 40px;
     padding: 8px 8px;
-}
-.nav-main-img{
-  padding: 15px 10px;
-  margin: 0 auto;
 }

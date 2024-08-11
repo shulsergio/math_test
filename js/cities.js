@@ -24,6 +24,7 @@ const citiesModalContent = document.querySelector(".cities-modal-content-js");
 const citiesFormNameInput = document.querySelector(".form-cities-name-input");
 let countries = [];
 
+//----- start
 function startData() {
   citiesText.classList.add("hidden-all");
   fetch("./js/data_file.json")
