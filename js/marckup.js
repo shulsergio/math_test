@@ -103,8 +103,10 @@ function shuffleArray(array) {
 
 export function onCreateCitiesMainText() {
   const data = JSON.parse(localStorage.getItem("country_obj"));
+  const zoom = 11;
+
   return `
-                      <p class="about-country-p">Страна: <span>${data.country}</span></p>
+<p class="about-country-p">Страна: <span>${data.country}</span></p>
         <div class="about-cities-text">
           <ul class="about-country-list">
             <li class="about-country-item">Столица: <span>${data.capital}</span></li>
@@ -127,7 +129,7 @@ export function onCreateCitiesMainText() {
             </li>
           </ul>
         </div>
-
+          <a href="https://www.google.com/maps/@${data.coordinates.lat},${data.coordinates.lng},${zoom}z" target="_blank">Открыть столицу на гугл картах</a>
      `;
 }
 

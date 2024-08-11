@@ -1,4 +1,4 @@
-import { getMapLeaflet, iziError, iziSuccess, iziWOW } from "./izi.js";
+import { iziError, iziSuccess, iziWOW } from "./izi.js";
 import {
   onCreateCitiesCountText,
   onCreateCitiesFormText,
@@ -61,7 +61,6 @@ function hendlerForm(e) {
   winGamesOld === winGamesNew ? iziError() : iziSuccess();
   [5, 7, 10].includes(winGamesNew) ? iziWOW(winGamesNew) : null;
 
-  getMapLeaflet(countryObj.coordinates.lat, countryObj.coordinates.lng);
   localStorage.setItem(LS_WIN_GAME, winGamesNew);
   console.log("winGamesNew-", winGamesNew);
   let currentTtlGames = parseInt(localStorage.getItem("ttl_games"), 10) + 1;
