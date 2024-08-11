@@ -376,6 +376,7 @@ text-wrap: center;
 
 .form-block-label{
 margin-bottom: 4px;
+font-size: 18px;
 }
 label {
     cursor: pointer;
@@ -531,6 +532,7 @@ font-family: Tahoma;
 
 .cities-form{
     margin-bottom: 20px;
+    font-size: 18px;
 }
 .cities-form button{
     margin-top: 16px;
