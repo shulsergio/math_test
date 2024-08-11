@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Спочатку нормалізатор -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css"
+    />
+    <!-- ---- -->
+    <title>Game Numbers</title>
+    <link rel="icon" href="../img/favicon_my.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="another-page">
+    <header class="header header-container">
+      <a href="./index.html"
+        ><img class="nav-main-img" src="./img/footer_name.png" alt="Company" width="150"
+      /></a>
+    </header>
+    <main>
+      <section class="section number-section">
+        <div class="container number-container">
+          <div class="block-numbers top-block-numbers">
+            <h2 class="title-header">Угадай число</h2>
+
+            <h3 class="title-three">Правила</h3>
+            <p class="text-rules">
+              Компьютер загадал число,<br />
+              от 1 до 100. <br />
+              Задача угадать это число с наименьшего количества попыток
+            </p>
+          </div>
+          <div class="block-numbers bottom-block-numbers">
+            <h3 class="title-three">Введи число</h3>
+            <input class="input-numbers" type="number" placeholder="00" />
+            <button class="btn-main-card numbers-btn numbers-btn-js" id="my-btn">OK</button>
+            <p class="text-vvod">Вы ввели число</p>
+            <p class="result"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img class="nav-main-img" src="./img/footer_name.png" alt="Company" width="150" />
+    </footer>
+    <script
+      type="module"
+      src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"
+    ></script>
+    <script type="module" src="./js/game_numbers.js"></script>
+  </body>
+</html>

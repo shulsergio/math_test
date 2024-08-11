@@ -25,3 +25,34 @@ export function iziWOW(qty) {
     color: "#ff00f2",
   });
 }
+// ---- numbers
+
+export function iziNumberLose() {
+  iziToast.error({
+    title: "УПС",
+    message: "Game OVER",
+    position: "topRight",
+    timeout: 4000,
+    color: "red",
+  });
+}
+
+export function iziNumberWin() {
+  iziToast.success({
+    title: "WOW!!!",
+    message: "И это правильно!!! ПОБЕДА!!! ",
+    position: "topRight",
+    timeout: 4500,
+    color: "#ff00f2",
+  });
+}
+
+export function iziNumberMore(data) {
+  iziToast.success({
+    title: "ОК!",
+    message: `${data}, продолжай`,
+    position: "topRight",
+    timeout: 4500,
+    color: "green",
+  });
+}
