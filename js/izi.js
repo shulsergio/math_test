@@ -33,6 +33,8 @@ export function getMapLeaflet(lat, lng) {
 
   if (map) {
     map.remove(); // Удаляем старую карту
+    const mapContainer = document.getElementById("map");
+    mapContainer.innerHTML = "";
   }
   map = L.map("map").setView([lat, lng], 4); // Задаем координаты и уровень масштабирования
 
