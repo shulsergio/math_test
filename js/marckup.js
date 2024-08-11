@@ -127,6 +127,7 @@ export function onCreateCitiesMainText() {
             </li>
           </ul>
         </div>
+
      `;
 }
 

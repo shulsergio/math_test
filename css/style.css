@@ -348,7 +348,7 @@ text-wrap: center;
 
 /* ------- cities */
 .section{
-    min-height: 400px;
+    min-height: 650px;
 }
 .cities-text{
     margin: 10px 0 0 15px;
@@ -544,4 +544,9 @@ font-family: Tahoma;
     max-width: 140px;
     max-height: 40px;
     padding: 8px 8px;
+}
+.cities-map{
+    width: 300px;
+    height: 200px;
+        position: relative;
 }

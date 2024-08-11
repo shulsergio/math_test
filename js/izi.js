@@ -1,3 +1,5 @@
+let map;
+
 export function iziSuccess() {
   iziToast.success({
     title: "ООО!!!",
@@ -24,4 +26,18 @@ export function iziWOW(qty) {
     timeout: 4000,
     color: "#ff00f2",
   });
+}
+
+export function getMapLeaflet(lat, lng) {
+  // Создаем карту
+
+  if (map) {
+    map.remove(); // Удаляем старую карту
+  }
+  map = L.map("map").setView([lat, lng], 4); // Задаем координаты и уровень масштабирования
+
+  // Добавляем слой карты
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy",
+  }).addTo(map);
 }
