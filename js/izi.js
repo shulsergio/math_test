@@ -1,3 +1,14 @@
+// -----add
+export function iziAddSuccess() {
+  iziToast.success({
+    title: "ГУД!!!",
+    message: "10 решений есть",
+    position: "topRight",
+    timeout: 4500,
+    color: "green",
+  });
+}
+// ------- capital
 export function iziSuccess() {
   iziToast.success({
     title: "ООО!!!",

@@ -1,4 +1,5 @@
 import { AddMath, MAIN_CARD_LIST } from "./const.js";
+import { iziAddSuccess } from "./izi.js";
 const list = document.querySelector(".js-list");
 
 export function createFormMarkupHtml(ARR_NUM_PLUS, mathOperation) {
@@ -40,13 +41,21 @@ export function createMarkupMainCard() {
 }
 
 export function createModalContent(data) {
+  iziAddSuccess();
+  let resultText = "";
+  if (data[0].wrongQty === 0) {
+    resultText = `КРУТО!, Все верно решил!!!`;
+  } else if (data[0].wrongQty < 5) {
+    resultText = `Не плохо, всего ${data[0].wrongQty} не правильных решения!!!`;
+  } else if (data[0].wrongQty >= 5) {
+    resultText = `НО, у тебя ${data[0].wrongQty} не правильных ответов, пробуй еще`;
+  }
   return data
     .map(({ itemName, itemPage, wrongQty }) => {
       return `
                  <div class="modal-text-box">
               <p class="modal-text">Супер!!! ${itemName} решено</p>
-              <p class="modal-text">Результаты:</p>
-              <p class="modal-text">всего ${wrongQty} не правильных ответов</p>
+              <p class="modal-text">${resultText}</p>
             </div>
             <a href="${itemPage}" class="btn-main-card btn-modal"
               >Считать еще раз</a

@@ -142,6 +142,9 @@ export function hendlerClickPlusOk() {
   onCreateModalWindow(resdata);
 }
 function onCreateModalWindow(resdata) {
+  console.log("resdata-");
+  console.log(resdata);
   modalWindow.classList.remove("modal-hidden");
+
   modalContent.insertAdjacentHTML("beforeend", createModalContent(resdata));
 }
