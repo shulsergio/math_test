@@ -11,8 +11,7 @@ btn.addEventListener("click", onBtnNumbersClick);
 function onBtnNumbersClick() {
   x++;
   if (x === 11) {
-    result.innerHTML = "You LOSE! 10 times input";
-    result.style.backgroundColor = "red";
+    result.innerHTML = `<p class="result-text">УПС! Не угадал за 10 попыток, пробуй еще)</p><a href="./index.html" class="btn-main-card numbers-btn-back">На главную</a>`;
     iziNumberLose();
     btn.classList.add("numbers-btn-hidden");
   }
@@ -20,8 +19,8 @@ function onBtnNumbersClick() {
   document.querySelector(".text-vvod").style.visibility = "visible";
   document.querySelector(".text-vvod").innerHTML += ", " + text;
   if (text === Num_comp) {
-    result.innerHTML = "YOU WIN";
-    result.style.backgroundColor = "Lime";
+    let doneText = `<p class="result-text">ВАУ! Угадал за ${x} попыток</p><a href="./index.html" class="btn-main-card numbers-btn-back">На главную</a>`;
+    result.innerHTML = doneText;
     iziNumberWin();
     btn.classList.add("numbers-btn-hidden");
   } else {
